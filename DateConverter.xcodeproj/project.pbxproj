@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A08A34A145FB5C2000A0207 /* calendars.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A08A349145FB5C2000A0207 /* calendars.plist */; };
+		7AE8CF2B145F3B8E0073AA61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8CF2A145F3B8E0073AA61 /* UIKit.framework */; };
+		7AE8CF2D145F3B8E0073AA61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8CF2C145F3B8E0073AA61 /* Foundation.framework */; };
+		7AE8CF2F145F3B8E0073AA61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8CF2E145F3B8E0073AA61 /* CoreGraphics.framework */; };
+		7AE8CF35145F3B8E0073AA61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF33145F3B8E0073AA61 /* InfoPlist.strings */; };
+		7AE8CF37145F3B8E0073AA61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8CF36145F3B8E0073AA61 /* main.m */; };
+		7AE8CF3B145F3B8E0073AA61 /* dcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8CF3A145F3B8E0073AA61 /* dcAppDelegate.m */; };
+		7AE8CF3E145F3B8E0073AA61 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF3C145F3B8E0073AA61 /* MainStoryboard_iPhone.storyboard */; };
+		7AE8CF41145F3B8E0073AA61 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF3F145F3B8E0073AA61 /* MainStoryboard_iPad.storyboard */; };
+		7AE8CF44145F3B8E0073AA61 /* dcMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8CF43145F3B8E0073AA61 /* dcMainViewController.m */; };
+		7AE8CF47145F3B8E0073AA61 /* dcFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8CF46145F3B8E0073AA61 /* dcFlipsideViewController.m */; };
+		7AE8CF50145F3B8F0073AA61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8CF2A145F3B8E0073AA61 /* UIKit.framework */; };
+		7AE8CF51145F3B8F0073AA61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8CF2C145F3B8E0073AA61 /* Foundation.framework */; };
+		7AE8CF59145F3B8F0073AA61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF57145F3B8F0073AA61 /* InfoPlist.strings */; };
+		7AE8CF5C145F3B8F0073AA61 /* DateConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8CF5B145F3B8F0073AA61 /* DateConverterTests.m */; };
+		7AE8CF76145F65FA0073AA61 /* indian40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF75145F65FA0073AA61 /* indian40x40.png */; };
+		7AE8CF78145F6CC30073AA61 /* buddhist40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF77145F6CC30073AA61 /* buddhist40x40.png */; };
+		7AE8CF7A145F6D2B0073AA61 /* chinese40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF79145F6D2B0073AA61 /* chinese40x40.png */; };
+		7AE8CF7C145F6DA70073AA61 /* hebrew40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF7B145F6DA70073AA61 /* hebrew40x40.png */; };
+		7AE8CF7E145F6E100073AA61 /* islamic40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF7D145F6E100073AA61 /* islamic40x40.png */; };
+		7AE8CF80145F6F970073AA61 /* japanese40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF7F145F6F970073AA61 /* japanese40x40.png */; };
+		7AE8CF82145F709A0073AA61 /* hebrew60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF81145F709A0073AA61 /* hebrew60x60.png */; };
+		7AE8CF84145F70E80073AA61 /* hebrew30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF83145F70E80073AA61 /* hebrew30x30.png */; };
+		7AE8CF87145F71D20073AA61 /* buddhist30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF85145F71D20073AA61 /* buddhist30x30.png */; };
+		7AE8CF88145F71D30073AA61 /* chinese30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF86145F71D20073AA61 /* chinese30x30.png */; };
+		7AE8CF8A145F723F0073AA61 /* japanese30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF89145F723F0073AA61 /* japanese30x30.png */; };
+		7AE8CF8C145F72C60073AA61 /* islamic30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF8B145F72C60073AA61 /* islamic30x30.png */; };
+		7AE8CF8E145F72D50073AA61 /* indian30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF8D145F72D50073AA61 /* indian30x30.png */; };
+		7AE8CF92145F77790073AA61 /* persia30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8CF91145F77790073AA61 /* persia30x30.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AE8CF52145F3B8F0073AA61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE8CF1D145F3B8D0073AA61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE8CF25145F3B8E0073AA61;
+			remoteInfo = DateConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A08A349145FB5C2000A0207 /* calendars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = calendars.plist; sourceTree = "<group>"; };
+		7AE8CF26145F3B8E0073AA61 /* DateConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE8CF2A145F3B8E0073AA61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7AE8CF2C145F3B8E0073AA61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7AE8CF2E145F3B8E0073AA61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7AE8CF32145F3B8E0073AA61 /* DateConverter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateConverter-Info.plist"; sourceTree = "<group>"; };
+		7AE8CF34145F3B8E0073AA61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AE8CF36145F3B8E0073AA61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AE8CF38145F3B8E0073AA61 /* DateConverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DateConverter-Prefix.pch"; sourceTree = "<group>"; };
+		7AE8CF39145F3B8E0073AA61 /* dcAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dcAppDelegate.h; sourceTree = "<group>"; };
+		7AE8CF3A145F3B8E0073AA61 /* dcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dcAppDelegate.m; sourceTree = "<group>"; };
+		7AE8CF3D145F3B8E0073AA61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		7AE8CF40145F3B8E0073AA61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7AE8CF42145F3B8E0073AA61 /* dcMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dcMainViewController.h; sourceTree = "<group>"; };
+		7AE8CF43145F3B8E0073AA61 /* dcMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dcMainViewController.m; sourceTree = "<group>"; };
+		7AE8CF45145F3B8E0073AA61 /* dcFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dcFlipsideViewController.h; sourceTree = "<group>"; };
+		7AE8CF46145F3B8E0073AA61 /* dcFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dcFlipsideViewController.m; sourceTree = "<group>"; };
+		7AE8CF4D145F3B8F0073AA61 /* DateConverterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateConverterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE8CF56145F3B8F0073AA61 /* DateConverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateConverterTests-Info.plist"; sourceTree = "<group>"; };
+		7AE8CF58145F3B8F0073AA61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AE8CF5A145F3B8F0073AA61 /* DateConverterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateConverterTests.h; sourceTree = "<group>"; };
+		7AE8CF5B145F3B8F0073AA61 /* DateConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateConverterTests.m; sourceTree = "<group>"; };
+		7AE8CF75145F65FA0073AA61 /* indian40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indian40x40.png; sourceTree = "<group>"; };
+		7AE8CF77145F6CC30073AA61 /* buddhist40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddhist40x40.png; sourceTree = "<group>"; };
+		7AE8CF79145F6D2B0073AA61 /* chinese40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chinese40x40.png; sourceTree = "<group>"; };
+		7AE8CF7B145F6DA70073AA61 /* hebrew40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hebrew40x40.png; sourceTree = "<group>"; };
+		7AE8CF7D145F6E100073AA61 /* islamic40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = islamic40x40.png; sourceTree = "<group>"; };
+		7AE8CF7F145F6F970073AA61 /* japanese40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japanese40x40.png; sourceTree = "<group>"; };
+		7AE8CF81145F709A0073AA61 /* hebrew60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hebrew60x60.png; sourceTree = "<group>"; };
+		7AE8CF83145F70E80073AA61 /* hebrew30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hebrew30x30.png; sourceTree = "<group>"; };
+		7AE8CF85145F71D20073AA61 /* buddhist30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddhist30x30.png; sourceTree = "<group>"; };
+		7AE8CF86145F71D20073AA61 /* chinese30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chinese30x30.png; sourceTree = "<group>"; };
+		7AE8CF89145F723F0073AA61 /* japanese30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japanese30x30.png; sourceTree = "<group>"; };
+		7AE8CF8B145F72C60073AA61 /* islamic30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = islamic30x30.png; sourceTree = "<group>"; };
+		7AE8CF8D145F72D50073AA61 /* indian30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indian30x30.png; sourceTree = "<group>"; };
+		7AE8CF91145F77790073AA61 /* persia30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = persia30x30.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AE8CF23145F3B8E0073AA61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE8CF2B145F3B8E0073AA61 /* UIKit.framework in Frameworks */,
+				7AE8CF2D145F3B8E0073AA61 /* Foundation.framework in Frameworks */,
+				7AE8CF2F145F3B8E0073AA61 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE8CF49145F3B8F0073AA61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE8CF50145F3B8F0073AA61 /* UIKit.framework in Frameworks */,
+				7AE8CF51145F3B8F0073AA61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AE8CF1B145F3B8D0073AA61 = {
+			isa = PBXGroup;
+			children = (
+				7AE8CF30145F3B8E0073AA61 /* DateConverter */,
+				7AE8CF54145F3B8F0073AA61 /* DateConverterTests */,
+				7AE8CF29145F3B8E0073AA61 /* Frameworks */,
+				7AE8CF27145F3B8E0073AA61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AE8CF27145F3B8E0073AA61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8CF26145F3B8E0073AA61 /* DateConverter.app */,
+				7AE8CF4D145F3B8F0073AA61 /* DateConverterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE8CF29145F3B8E0073AA61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8CF2A145F3B8E0073AA61 /* UIKit.framework */,
+				7AE8CF2C145F3B8E0073AA61 /* Foundation.framework */,
+				7AE8CF2E145F3B8E0073AA61 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AE8CF30145F3B8E0073AA61 /* DateConverter */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8CF39145F3B8E0073AA61 /* dcAppDelegate.h */,
+				7AE8CF3A145F3B8E0073AA61 /* dcAppDelegate.m */,
+				7AE8CF3C145F3B8E0073AA61 /* MainStoryboard_iPhone.storyboard */,
+				7AE8CF3F145F3B8E0073AA61 /* MainStoryboard_iPad.storyboard */,
+				7AE8CF42145F3B8E0073AA61 /* dcMainViewController.h */,
+				7AE8CF43145F3B8E0073AA61 /* dcMainViewController.m */,
+				7AE8CF45145F3B8E0073AA61 /* dcFlipsideViewController.h */,
+				7AE8CF46145F3B8E0073AA61 /* dcFlipsideViewController.m */,
+				7AE8CF31145F3B8E0073AA61 /* Supporting Files */,
+			);
+			path = DateConverter;
+			sourceTree = "<group>";
+		};
+		7AE8CF31145F3B8E0073AA61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8CF79145F6D2B0073AA61 /* chinese40x40.png */,
+				7AE8CF77145F6CC30073AA61 /* buddhist40x40.png */,
+				7AE8CF75145F65FA0073AA61 /* indian40x40.png */,
+				7AE8CF7D145F6E100073AA61 /* islamic40x40.png */,
+				7AE8CF83145F70E80073AA61 /* hebrew30x30.png */,
+				7AE8CF8D145F72D50073AA61 /* indian30x30.png */,
+				7AE8CF8B145F72C60073AA61 /* islamic30x30.png */,
+				7AE8CF89145F723F0073AA61 /* japanese30x30.png */,
+				7AE8CF85145F71D20073AA61 /* buddhist30x30.png */,
+				7AE8CF86145F71D20073AA61 /* chinese30x30.png */,
+				7AE8CF91145F77790073AA61 /* persia30x30.png */,
+				7AE8CF7F145F6F970073AA61 /* japanese40x40.png */,
+				7AE8CF81145F709A0073AA61 /* hebrew60x60.png */,
+				7A08A349145FB5C2000A0207 /* calendars.plist */,
+				7AE8CF7B145F6DA70073AA61 /* hebrew40x40.png */,
+				7AE8CF32145F3B8E0073AA61 /* DateConverter-Info.plist */,
+				7AE8CF33145F3B8E0073AA61 /* InfoPlist.strings */,
+				7AE8CF36145F3B8E0073AA61 /* main.m */,
+				7AE8CF38145F3B8E0073AA61 /* DateConverter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AE8CF54145F3B8F0073AA61 /* DateConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8CF5A145F3B8F0073AA61 /* DateConverterTests.h */,
+				7AE8CF5B145F3B8F0073AA61 /* DateConverterTests.m */,
+				7AE8CF55145F3B8F0073AA61 /* Supporting Files */,
+			);
+			path = DateConverterTests;
+			sourceTree = "<group>";
+		};
+		7AE8CF55145F3B8F0073AA61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8CF56145F3B8F0073AA61 /* DateConverterTests-Info.plist */,
+				7AE8CF57145F3B8F0073AA61 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AE8CF25145F3B8E0073AA61 /* DateConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE8CF5F145F3B8F0073AA61 /* Build configuration list for PBXNativeTarget "DateConverter" */;
+			buildPhases = (
+				7AE8CF22145F3B8E0073AA61 /* Sources */,
+				7AE8CF23145F3B8E0073AA61 /* Frameworks */,
+				7AE8CF24145F3B8E0073AA61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateConverter;
+			productName = DateConverter;
+			productReference = 7AE8CF26145F3B8E0073AA61 /* DateConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AE8CF4C145F3B8F0073AA61 /* DateConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE8CF62145F3B8F0073AA61 /* Build configuration list for PBXNativeTarget "DateConverterTests" */;
+			buildPhases = (
+				7AE8CF48145F3B8F0073AA61 /* Sources */,
+				7AE8CF49145F3B8F0073AA61 /* Frameworks */,
+				7AE8CF4A145F3B8F0073AA61 /* Resources */,
+				7AE8CF4B145F3B8F0073AA61 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE8CF53145F3B8F0073AA61 /* PBXTargetDependency */,
+			);
+			name = DateConverterTests;
+			productName = DateConverterTests;
+			productReference = 7AE8CF4D145F3B8F0073AA61 /* DateConverterTests.octest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AE8CF1D145F3B8D0073AA61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0640;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "iNET Interactive, Inc.";
+			};
+			buildConfigurationList = 7AE8CF20145F3B8D0073AA61 /* Build configuration list for PBXProject "DateConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7AE8CF1B145F3B8D0073AA61;
+			productRefGroup = 7AE8CF27145F3B8E0073AA61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AE8CF25145F3B8E0073AA61 /* DateConverter */,
+				7AE8CF4C145F3B8F0073AA61 /* DateConverterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AE8CF24145F3B8E0073AA61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE8CF35145F3B8E0073AA61 /* InfoPlist.strings in Resources */,
+				7AE8CF3E145F3B8E0073AA61 /* MainStoryboard_iPhone.storyboard in Resources */,
+				7AE8CF41145F3B8E0073AA61 /* MainStoryboard_iPad.storyboard in Resources */,
+				7AE8CF76145F65FA0073AA61 /* indian40x40.png in Resources */,
+				7AE8CF78145F6CC30073AA61 /* buddhist40x40.png in Resources */,
+				7AE8CF7A145F6D2B0073AA61 /* chinese40x40.png in Resources */,
+				7AE8CF7C145F6DA70073AA61 /* hebrew40x40.png in Resources */,
+				7AE8CF7E145F6E100073AA61 /* islamic40x40.png in Resources */,
+				7AE8CF80145F6F970073AA61 /* japanese40x40.png in Resources */,
+				7AE8CF82145F709A0073AA61 /* hebrew60x60.png in Resources */,
+				7AE8CF84145F70E80073AA61 /* hebrew30x30.png in Resources */,
+				7AE8CF87145F71D20073AA61 /* buddhist30x30.png in Resources */,
+				7AE8CF88145F71D30073AA61 /* chinese30x30.png in Resources */,
+				7AE8CF8A145F723F0073AA61 /* japanese30x30.png in Resources */,
+				7AE8CF8C145F72C60073AA61 /* islamic30x30.png in Resources */,
+				7AE8CF8E145F72D50073AA61 /* indian30x30.png in Resources */,
+				7AE8CF92145F77790073AA61 /* persia30x30.png in Resources */,
+				7A08A34A145FB5C2000A0207 /* calendars.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE8CF4A145F3B8F0073AA61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE8CF59145F3B8F0073AA61 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AE8CF4B145F3B8F0073AA61 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AE8CF22145F3B8E0073AA61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE8CF37145F3B8E0073AA61 /* main.m in Sources */,
+				7AE8CF3B145F3B8E0073AA61 /* dcAppDelegate.m in Sources */,
+				7AE8CF44145F3B8E0073AA61 /* dcMainViewController.m in Sources */,
+				7AE8CF47145F3B8E0073AA61 /* dcFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE8CF48145F3B8F0073AA61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE8CF5C145F3B8F0073AA61 /* DateConverterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AE8CF53145F3B8F0073AA61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AE8CF25145F3B8E0073AA61 /* DateConverter */;
+			targetProxy = 7AE8CF52145F3B8F0073AA61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AE8CF33145F3B8E0073AA61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE8CF34145F3B8E0073AA61 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7AE8CF3C145F3B8E0073AA61 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE8CF3D145F3B8E0073AA61 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE8CF3F145F3B8E0073AA61 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE8CF40145F3B8E0073AA61 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE8CF57145F3B8F0073AA61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE8CF58145F3B8F0073AA61 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AE8CF5D145F3B8F0073AA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AE8CF5E145F3B8F0073AA61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AE8CF60145F3B8F0073AA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DateConverter/DateConverter-Prefix.pch";
+				INFOPLIST_FILE = "DateConverter/DateConverter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7AE8CF61145F3B8F0073AA61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DateConverter/DateConverter-Prefix.pch";
+				INFOPLIST_FILE = "DateConverter/DateConverter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7AE8CF63145F3B8F0073AA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DateConverter.app/DateConverter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DateConverter/DateConverter-Prefix.pch";
+				INFOPLIST_FILE = "DateConverterTests/DateConverterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		7AE8CF64145F3B8F0073AA61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DateConverter.app/DateConverter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DateConverter/DateConverter-Prefix.pch";
+				INFOPLIST_FILE = "DateConverterTests/DateConverterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AE8CF20145F3B8D0073AA61 /* Build configuration list for PBXProject "DateConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE8CF5D145F3B8F0073AA61 /* Debug */,
+				7AE8CF5E145F3B8F0073AA61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE8CF5F145F3B8F0073AA61 /* Build configuration list for PBXNativeTarget "DateConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE8CF60145F3B8F0073AA61 /* Debug */,
+				7AE8CF61145F3B8F0073AA61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE8CF62145F3B8F0073AA61 /* Build configuration list for PBXNativeTarget "DateConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE8CF63145F3B8F0073AA61 /* Debug */,
+				7AE8CF64145F3B8F0073AA61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AE8CF1D145F3B8D0073AA61 /* Project object */;
+}
